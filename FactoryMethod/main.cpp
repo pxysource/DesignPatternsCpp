@@ -71,10 +71,10 @@ public:
 
 int main()
 {
-	const auto factoryA = new ConcreteFactoryA();
-	const auto factoryB = new ConcreteFactoryB();
-	const auto productA = factoryA->CreateProduct();
-	const auto productB = factoryB->CreateProduct();
+	Factory* factoryA = new ConcreteFactoryA();
+	Factory* factoryB = new ConcreteFactoryB();
+	const Product* productA = factoryA->CreateProduct();
+	const Product* productB = factoryB->CreateProduct();
 	productA->show();
 	productB->show();
 
